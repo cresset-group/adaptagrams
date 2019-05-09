@@ -81,6 +81,7 @@ Win Release
 > cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Release" ..
 > nmake
 
+
 Win Debug
 ~~~~~~~~~
 
@@ -90,6 +91,7 @@ Win Debug
 > cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Debug" ..
 > nmake
 
+
 Linux
 ~~~~~
 
@@ -98,6 +100,7 @@ Linux
 > cd build
 > cmake3 ..
 > make
+
 
 macOS
 ~~~~~
