@@ -73,28 +73,41 @@ Building (cmake)
 ---------------- 
 
 Win Release
-===========
-cd  cola
-mkdir build
-cd build
-cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Release" ..
-nmake
+~~~~~~~~~~~
+
+> cd cola
+> mkdir build
+> cd build
+> cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Release" ..
+> nmake
 
 Win Debug
-=========
-cd  cola
-mkdir build
-cd build
-cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Debug" ..
-nmake
+~~~~~~~~~
 
-Linux & macOS
-============
-cd  cola
-mkdir build
-cd build
-cmake ..
-make
+> cd cola
+> mkdir build
+> cd build
+> cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Debug" ..
+> nmake
+
+Linux
+~~~~~
+
+> cd cola
+> mkdir build
+> cd build
+> cmake3 ..
+> make
+
+macOS
+~~~~~
+
+> cd cola
+> mkdir build
+> cd build
+> cmake ..
+> make
+
 
 Building (autotools)
 --------------------
