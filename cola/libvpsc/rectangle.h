@@ -33,6 +33,7 @@
 #include <cassert>
 #include <cmath>
 
+#include "vpsc_export.h"
 #include "libvpsc/assertions.h"
 
 namespace vpsc {
@@ -75,7 +76,7 @@ struct RectangleIntersections {
  * @brief  A rectangle represents a fixed-size shape in the diagram that may
  *         be moved to prevent overlaps and satisfy constraints.
  */
-class Rectangle {   
+class VPSC_EXPORT Rectangle {
 public:
     /**
      * @brief Constructs a rectangle by specifying the positions of all 
@@ -233,7 +234,8 @@ public:
      * in the other axis for example, to avoid numerical precision problems in
      * the axis-by-axis overlap removal process.
      */
-    static double xBorder,yBorder;
+    static double xBorder;
+    static double yBorder;
     static void setXBorder(double x) {xBorder=x;}
     static void setYBorder(double y) {yBorder=y;}
     

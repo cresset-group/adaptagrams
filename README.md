@@ -69,9 +69,51 @@ Software using one or more of the Adaptagrams libraries include:
  *  [BRL-CAD][brlcad], a powerful cross-platform open source solid modeling system that includes interactive geometry editing, high-performance ray-tracing for rendering and geometric analysis, image and signal-processing tools, a system performance analysis benchmark suite, libraries for robust geometric representation, with more than 20 years of active development.
 
 
+Building (cmake)
+---------------- 
 
-Building
---------
+Win Release
+
+```
+cd cola
+mkdir build
+cd build
+cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Release" ..
+nmake
+```
+
+Win Debug
+
+```
+cd cola
+mkdir build
+cd build
+cmake -G "NMake Makefiles" "-DCMAKE_BUILD_TYPE=Debug" ..
+nmake
+```
+
+Linux
+
+```
+cd cola
+mkdir build
+cd build
+cmake3 ..
+make
+```
+
+macOS
+
+```
+cd cola
+mkdir build
+cd build
+cmake ..
+make
+```
+
+Building (autotools)
+--------------------
 
 The library code is all contained in the `cola` directory of the repository.
 
