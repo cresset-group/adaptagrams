@@ -1,5 +1,5 @@
-project(adaptagrams_project)
 cmake_minimum_required(VERSION 3.4)
+project(adaptagrams_project)
 include(GenerateExportHeader)
 
 if(MSVC)
